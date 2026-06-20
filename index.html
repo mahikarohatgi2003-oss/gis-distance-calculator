@@ -7,19 +7,35 @@
 <body>
 
 <div class="container">
-    <h1>GIS Distance Calculator</h1>
 
-    <input type="number" id="lat1" placeholder="Latitude 1">
-    <input type="number" id="lon1" placeholder="Longitude 1">
+    <h1>🌍 GIS Distance Calculator</h1>
 
-    <input type="number" id="lat2" placeholder="Latitude 2">
-    <input type="number" id="lon2" placeholder="Longitude 2">
+    <button onclick="loadExample()">
+        Load Delhi → Mumbai Example
+    </button>
+
+    <label>Location 1 Latitude</label>
+    <input type="number" id="lat1" placeholder="28.6139">
+
+    <label>Location 1 Longitude</label>
+    <input type="number" id="lon1" placeholder="77.2090">
+
+    <label>Location 2 Latitude</label>
+    <input type="number" id="lat2" placeholder="19.0760">
+
+    <label>Location 2 Longitude</label>
+    <input type="number" id="lon2" placeholder="72.8777">
 
     <button onclick="calculateDistance()">
         Calculate Distance
     </button>
 
+    <button onclick="resetForm()">
+        Reset
+    </button>
+
     <h2 id="result"></h2>
+
 </div>
 
 <script src="script.js"></script>
